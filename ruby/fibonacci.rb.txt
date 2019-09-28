@@ -1,0 +1,25 @@
+/******************************************************************************
+
+ Ruby Program  for cerner_2^5_2019
+
+ *******************************************************************************/
+
+class Fibonacci
+  def series
+    puts "Enter the Number" #accept number from user
+    n=gets.to_i
+    f1=0
+    f2=1
+    f3=0
+        while f3<n do # loop from 0 to the user input
+          f3=f1+f2 # obtain the next number in the fibonacci series
+          if f3<n # Display the number only if it is less than the user input 
+            puts f3
+          end
+          f1=f2 
+          f2=f3  
+       end
+    end
+end
+fibo=Fibonacci.new
+fibo.series
